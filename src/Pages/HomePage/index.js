@@ -1,63 +1,18 @@
-import styled from 'styled-components';
+import Conainer from "./HomeStyle.js"
+import profilePicture from "../../Images/profilePicture.png"
 
 export default function HomePage(){
     return(
-    <Container>
-        <div className="sidebar">
-            <h1>PORTFÓLIO</h1>
-            <ol>
-                <li><ion-icon name="home-outline"></ion-icon>Início</li>
-                <li><ion-icon name="person-circle-outline"></ion-icon>Sobre</li>
-                <li><ion-icon name="construct-outline"></ion-icon>Tecnologias</li>
-                <li><ion-icon name="chatbox-ellipses-outline"></ion-icon>Contatos</li>
-            </ol>
+    <Conainer>
+        <div className="left">
+            <h1>Olá, meu nome é <span>Sarah Bezerra da Silva</span></h1>
+            <h2>Eu sou Desenvolvedora Web Full-Stack</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            <button>SAIBA MAIS</button>
         </div>
-    </Container>
+        <div className="right">
+            <img src={profilePicture} alt="Foto de Perfil de Sarah" />
+        </div>
+    </Conainer>
     )
 }
-
-const Container = styled.div`
-min-height: 100vh;
-display: flex;
-font-family: 'Spartan', sans-serif;
-
-    .sidebar{
-        width: 270px;
-        padding: 70px 20px;
-        
-        background-image: linear-gradient(to top, #FFB6C1, #E889C8);
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h1{
-            margin-bottom: 70px;
-            font-size: 28px;
-            color: #B53E3F;
-            font-weight: 500;
-        }
-
-        li{
-            font-size: 18px;
-            padding: 10px 30px;
-            margin: 8px 0;
-            border-radius: 50px;
-
-            display: flex;
-            align-items: center;
-
-            color: #2B011D;
-
-            ion-icon{
-                font-size: 24px;
-                margin-right: 12px;
-            }
-        }
-
-        li:hover{
-            background-color: rgba(192,192,192, 0.4);
-            color: #FFF;
-        }
-    }
-`;

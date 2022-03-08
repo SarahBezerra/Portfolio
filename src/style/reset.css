@@ -50,4 +50,8 @@ strong {
 }
 .root {
     min-height: 100vh;
+	display: flex;
+	font-family: 'Spartan', sans-serif;
+	color: #FFF;
+	background-color: #EFEFEF;
 }
